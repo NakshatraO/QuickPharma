@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    background-color: #34d1bf;
+    color: white;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.header-actions a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-actions a:hover {
+    background-color: #2ba99f;
+}
+
+.header-container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .logo img {
+    margin-right: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+.team {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #5DB0C6;
+    margin-top: 0;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.member p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
