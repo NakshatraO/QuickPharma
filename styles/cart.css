@@ -9,7 +9,7 @@ body {
 .header-container {
     background-color: #34d1bf;
     color: white;
-    padding: 10px 35px;
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
