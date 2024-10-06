@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles */  /* 161.11 x 74.95 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -162,7 +162,7 @@ header {
     background-size: cover;
     /* background-color: #ffffff; */
     color: white;
-    margin: 15px;
+    margin: 10px;
     padding: 20px;
     border-radius: 00%;
     text-align: center;
@@ -195,7 +195,7 @@ header {
 }
 
 .category-item:hover {
-    transform: scale(1.053);
+    transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
