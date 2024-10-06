@@ -66,7 +66,7 @@ header {
 
 .header-container .logo img {
     height: 50px;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .header-container .search-bar {
@@ -198,7 +198,6 @@ header {
     transform: scale(1.053);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* font-size: 30px; */
 }
 
 /* Adjust for smaller screens */
@@ -216,50 +215,39 @@ header {
     }
 }
 
-/* Custom colors for each category */
-/* .category-item.vitamins {
-    background-color: #c1e5df;
-}
-
-.category-item.shampoos {
-    background-color: #fbe7c6;
-}
-
-.category-item.feminine {
-    background-color: #f8c1d9;
-}
-
-.category-item.ayurvedic {
-    background-color: #f5d4cf;
-}
-
-.category-item.skincare {
-    background-color: #c7eceb;
-} */
 .category-item.vitamins {
     background-image: url('../images/vitaminsSupplements.jpeg');
+    opacity: 0.9;
 }
 
 .category-item.wellness {
     background-image: url('../images/medicine.png');
+    opacity: 0.9;
 }
 
 .category-item.feminine {
     background-image: url('../images/hygine.jpeg');
+    opacity: 0.9;
 }
 
 .category-item.ayurvedic {
     background-image: url('../images/ayurveda.jpeg');
+    opacity: 0.9;
 }
 
 .category-item.shampoos {
     background-image: url('../images/shampooConditioner.jpg');
+    opacity: 0.8;
 }
 
 .category-item.skincare {
     background-image: url('../images/skincareCosmetics.jpg');
+    opacity: 0.8;
 }
 
+.category-item :hover {
+    font-size: 28px;
+}
 
 /* Why Choose Us Section */
 .whyChooseUs {
@@ -285,41 +273,13 @@ header {
     width: 260px;
 }
 
-/* Our Services Section */
-/* .ourServices {
-    padding: 2rem;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-.services-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.services-content div {
-    width: 30%;
-    margin: 1rem;
-} */
 .card-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-/* .card {
-    background-color: #c1e5df;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    flex-basis: 30%;
-    transition: transform 0.3s ease;
-    margin: 20px;
-} */
 .card {
-    /* background-color: #eaf6f6; */
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

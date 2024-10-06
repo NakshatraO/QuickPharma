@@ -46,8 +46,9 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 10px;
+    color: #345e6a;
+    font-size: 30px;
 }
 
 header p {
