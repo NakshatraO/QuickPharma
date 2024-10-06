@@ -143,6 +143,10 @@ header {
     border-radius: 50%;
 }
 
+#store {
+    margin: 20px;
+}
+
 /* Categories Section */
 .category-list {
     display: flex;
