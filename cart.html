@@ -38,11 +38,10 @@
 <div class="cart-container">
     <h2>Your Cart</h2>
     <div id="cart-items">
-        <!-- Cart items will be dynamically added here -->
     </div>
     <div class="cart-total">
         Total: ₹<span id="cart-total">0</span>
-    </div>
+    </d0iv>
     <button class="checkout-button" onclick="checkout()">Checkout</button>
     <div id="success-message" class="success-message" style="display: none;">
         Checkout Successful! Thank you for your purchase.
@@ -80,30 +79,23 @@ function updateCart() {
     cartTotalElement.textContent = cartTotal;
 }
 
-// Function to update quantity of a product in the cart
 function updateQuantity(productName, newQuantity) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let product = cart.find(item => item.name === productName);
 
     if (product && newQuantity > 0) {
-        product.quantity = parseInt(newQuantity, 10); // Update the quantity
-        localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart
-        updateCart(); // Update cart display
+        product.quantity = parseInt(newQuantity, 10); 
+        localStorage.setItem('cart', JSON.stringify(cart)); 
+        updateCart(); 
     }
 }
 
-// Function to handle checkout process
 function checkout() {
     localStorage.removeItem('cart');
     updateCart();
     document.getElementById('success-message').style.display = 'block';
 }
-
-// Call updateCart on page load to display current cart
 updateCart();
 </script>
-
-
-
 </body>
 </html>

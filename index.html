@@ -39,7 +39,6 @@
                 </div>
             </div>
 
-
             <div class="category-nav">
                 <a href="vitamins.html">
                     Vitamins
@@ -62,35 +61,6 @@
             </div>
         </div>
     </header>
-
-    <!-- <div id="store">
-        <div class="carousel"
-            data-flickity='{ "wrapAround": true, "autoPlay": 2000 , "imagesLoaded":true, "prevNextButtons": true, "pageDots": false }'>
-
-            <div class="carousel-cell">
-                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654098465_Home_banner2555.jpg"
-                    title="Get Flat 4000 Paytm Cashback points on Netmeds"
-                    alt="Get Flat 4000 Paytm Cashback points on Netmeds">
-            </div>
-
-            <div class="carousel-cell">
-                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654275901_Web_Home_Kareenasdhdh.jpg">
-            </div>
-
-            <div class="carousel-cell">
-                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654017250_Home_bannergdfshd.jpg">
-            </div>
-
-            <div class="carousel-cell">
-                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654098984_Home_banner23566.jpg">
-            </div>
-
-            <div class="carousel-cell">
-                <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1631889258_Web_Home_Bannerfdgdg.jpg">
-            </div>
-
-        </div>
-    </div> -->
 
     <div class="category-list">
         <a href="vitamins.html" class="category-item vitamins">
@@ -270,10 +240,8 @@
 
             stars.forEach(star => {
                 star.addEventListener('click', () => {
-                    // Remove 'selected' class from all stars
                     stars.forEach(s => s.classList.remove('selected'));
 
-                    // Add 'selected' class to the clicked star and all previous stars
                     star.classList.add('selected');
                     let currentValue = star.getAttribute('data-value');
 
@@ -284,7 +252,6 @@
                     });
                 });
 
-                // Optional: Hover effect to show the rating before clicking
                 star.addEventListener('mouseover', () => {
                     stars.forEach(s => {
                         if (s.getAttribute('data-value') <= star.getAttribute('data-value')) {

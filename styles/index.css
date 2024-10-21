@@ -1,4 +1,3 @@
-/* General Styles */  /* 161.11 x 74.95 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,12 +23,10 @@ h2 {
 @keyframes scroll-text {
     0% {
         transform: translateX(100%);
-        /* right  */
     }
 
     100% {
         transform: translateX(-200%);
-        /* left */
     }
 }
 
@@ -200,21 +197,6 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-    .category-item {
-        width: calc(50% - 40px);
-        /* 2 items per row */
-    }
-}
-
-@media (max-width: 480px) {
-    .category-item {
-        width: calc(100% - 40px);
-        /* 1 item per row */
-    }
-}
-
 .category-item.vitamins {
     background-image: url('../images/vitaminsSupplements.jpeg');
     opacity: 0.9;
@@ -244,10 +226,6 @@ header {
     background-image: url('../images/skincareCosmetics.jpg');
     opacity: 0.8;
 }
-
-/* .category-list :hover {
-    font-size: 28px;
-} */
 
 /* Why Choose Us Section */
 .whyChooseUs {
@@ -295,7 +273,7 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
@@ -451,7 +429,6 @@ h2{
 }
 
 footer {
-    /* background-color: #008080; */
     background-color: #006666;
     color: white;
     text-align: center;
@@ -463,36 +440,182 @@ footer {
 .star-rating {
     display: flex;
     cursor: pointer;
-    /* Indicate that the stars are clickable */
 }
 
 .star {
     font-size: 40px;
-    /* Size of the stars */
     color: #ccc;
-    /* Default color for stars */
     margin-right: 5px;
-    /* Space between stars */
 }
 
 .star:hover,
 .star.hovered {
     color: #f5a623;
-    /* Color on hover */
 }
 
 .star.selected {
     color: #f5a623;
-    /* Color for selected stars */
 }
 
-/* New styles for smaller screens */
-@media (max-width: 768px) {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    .whyChooseUs-content div,
-    .services-content div,
-    .contact-content div {
-        width: 80%;
-        /* Adjust width for smaller screens */
+h1,
+h2 {
+    color: #008080;
+    text-align: center;
+}
+
+.promo-banner {
+    background-color: #a6cf37;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+header {
+    background-color: #34d1bf;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .header-container .search-bar {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .header-container .header-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-list {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .category-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .whyChooseUs-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .whyChooseUs-content div {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .feedback form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feedback input,
+    .feedback textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    .promo-banner {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .header-top {
+        padding: 10px 0;
+    }
+
+    .header-container .search-bar input {
+        padding: 8px;
+    }
+
+    .category-item h3 {
+        font-size: 18px;
+    }
+
+    .whyChooseUs-content div img {
+        height: 120px;
+        width: 160px;
+    }
+
+    .card-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
     }
 }
